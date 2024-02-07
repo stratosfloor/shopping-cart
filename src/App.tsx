@@ -1,18 +1,22 @@
-import './index.css';
 import { Routes, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import { Home } from './pages/Home';
 import { Store } from './pages/Store';
 import { About } from './pages/About';
+import { Navbar } from './components/Navbar';
 
 function App() {
 	return (
-		<main className="flex flex-col items-center mb-4">
-			<Routes>
-				<Route path="/" element={<Home />}></Route>
-				<Route path="/store" element={<Store />}></Route>
-				<Route path="/about" element={<About />}></Route>
-			</Routes>
-		</main>
+		<>
+			<Navbar />
+			<Container className="mb4">
+				<Routes>
+					<Route path="/" element={<Home />}></Route>
+					<Route path="/store" element={<Store />}></Route>
+					<Route path="/about" element={<About />}></Route>
+				</Routes>
+			</Container>
+		</>
 	);
 }
 
