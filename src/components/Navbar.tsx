@@ -21,7 +21,7 @@ export function Navbar() {
 				</Nav>
 
 				<Button
-					onClick={() => openCart}
+					onClick={openCart}
 					style={{ width: '3rem', height: '3rem', position: 'relative' }}
 					variant="outline-primary"
 					className="rounded-circle"
