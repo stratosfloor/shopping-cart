@@ -9,7 +9,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<Container className="mb4">
+			<Container className="mb-4">
 				<Routes>
 					<Route path="/" element={<Home />}></Route>
 					<Route path="/store" element={<Store />}></Route>
